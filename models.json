@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "updated": "2026-05-18",
+  "models": [
+    {
+      "id": "tiny",
+      "name": "Whisper Tiny",
+      "description": "Smallest and fastest canonical Whisper model. Best for low-power machines and quick tests.",
+      "languages": ["multi"],
+      "size_mb": 75,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "base",
+      "name": "Whisper Base",
+      "description": "Fast canonical Whisper model with better accuracy than tiny. Good baseline for CPU use.",
+      "languages": ["multi"],
+      "size_mb": 142,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "small",
+      "name": "Whisper Small",
+      "description": "Balanced canonical Whisper model for everyday transcription on modest hardware.",
+      "languages": ["multi"],
+      "size_mb": 466,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "medium",
+      "name": "Whisper Medium",
+      "description": "Higher-accuracy canonical Whisper model for users who can trade speed for quality.",
+      "languages": ["multi"],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin",
+      "recommended_hardware": "16GB+ RAM recommended. GPU acceleration recommended for frequent use.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "large-v3",
+      "name": "Whisper Large v3",
+      "description": "Highest-accuracy canonical Whisper model. Best quality, highest resource use.",
+      "languages": ["multi"],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "turbo",
+      "name": "Whisper Large v3 Turbo",
+      "description": "Fast large-v3-derived Whisper model with a strong speed/accuracy tradeoff. Recommended default local model.",
+      "languages": ["multi"],
+      "size_mb": 1600,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin",
+      "recommended_hardware": "16GB+ RAM recommended. Good default for local transcription; GPU acceleration improves latency.",
+      "sha256": null,
+      "category": "canonical"
+    },
+    {
+      "id": "kb-whisper-large",
+      "name": "KB Whisper Large",
+      "description": "Swedish Whisper large model by KBLab, National Library of Sweden. Optimized for Swedish transcription.",
+      "languages": ["sv"],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/KBLab/kb-whisper-large/resolve/main/ggml-model.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "regional"
+    },
+    {
+      "id": "nb-whisper-large",
+      "name": "NB Whisper Large",
+      "description": "Norwegian Whisper large model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": ["no", "nb", "nn", "en"],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-large/resolve/main/ggml-model.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "regional"
+    }
+  ]
+}
