@@ -11,7 +11,8 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin",
       "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
     },
     {
       "id": "base",
@@ -22,7 +23,8 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin",
       "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
     },
     {
       "id": "small",
@@ -33,7 +35,8 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin",
       "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
     },
     {
       "id": "medium",
@@ -44,7 +47,8 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin",
       "recommended_hardware": "16GB+ RAM recommended. GPU acceleration recommended for frequent use.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
     },
     {
       "id": "large-v3",
@@ -55,7 +59,8 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin",
       "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
     },
     {
       "id": "turbo",
@@ -66,7 +71,56 @@
       "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin",
       "recommended_hardware": "16GB+ RAM recommended. Good default for local transcription; GPU acceleration improves latency.",
       "sha256": null,
-      "category": "canonical"
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "kb-whisper-tiny",
+      "name": "KB Whisper Tiny",
+      "description": "Swedish Whisper tiny model by KBLab, National Library of Sweden. Smallest and fastest Swedish model.",
+      "languages": ["sv"],
+      "size_mb": 75,
+      "url": "https://huggingface.co/KBLab/kb-whisper-tiny/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-base",
+      "name": "KB Whisper Base",
+      "description": "Swedish Whisper base model by KBLab, National Library of Sweden. Fast and lightweight Swedish transcription.",
+      "languages": ["sv"],
+      "size_mb": 142,
+      "url": "https://huggingface.co/KBLab/kb-whisper-base/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-small",
+      "name": "KB Whisper Small",
+      "description": "Swedish Whisper small model by KBLab, National Library of Sweden. Great balance of speed and accuracy for Swedish.",
+      "languages": ["sv"],
+      "size_mb": 466,
+      "url": "https://huggingface.co/KBLab/kb-whisper-small/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-medium",
+      "name": "KB Whisper Medium",
+      "description": "Swedish Whisper medium model by KBLab, National Library of Sweden. Strong accuracy for Swedish transcription.",
+      "languages": ["sv"],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/KBLab/kb-whisper-medium/resolve/main/ggml-model.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
     },
     {
       "id": "kb-whisper-large",
@@ -77,7 +131,56 @@
       "url": "https://huggingface.co/KBLab/kb-whisper-large/resolve/main/ggml-model.bin",
       "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
       "sha256": null,
-      "category": "regional"
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "nb-whisper-tiny",
+      "name": "NB Whisper Tiny",
+      "description": "Norwegian Whisper tiny model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": ["no", "nb", "nn", "en"],
+      "size_mb": 75,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-tiny/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-base",
+      "name": "NB Whisper Base",
+      "description": "Norwegian Whisper base model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": ["no", "nb", "nn", "en"],
+      "size_mb": 142,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-base/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-small",
+      "name": "NB Whisper Small",
+      "description": "Norwegian Whisper small model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": ["no", "nb", "nn", "en"],
+      "size_mb": 466,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-small/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-medium",
+      "name": "NB Whisper Medium",
+      "description": "Norwegian Whisper medium model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": ["no", "nb", "nn", "en"],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-medium/resolve/main/ggml-model.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
     },
     {
       "id": "nb-whisper-large",
@@ -88,7 +191,8 @@
       "url": "https://huggingface.co/NbAiLab/nb-whisper-large/resolve/main/ggml-model.bin",
       "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
       "sha256": null,
-      "category": "regional"
+      "category": "regional",
+      "group_id": "nbailab"
     }
   ]
 }
