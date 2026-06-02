@@ -4,6 +4,7 @@
   "models": [
     {
       "id": "tiny",
+      "provider_id": "whisper",
       "name": "Whisper Tiny",
       "description": "Smallest and fastest canonical Whisper model. Best for low-power machines and quick tests.",
       "languages": ["multi"],
@@ -16,6 +17,7 @@
     },
     {
       "id": "base",
+      "provider_id": "whisper",
       "name": "Whisper Base",
       "description": "Fast canonical Whisper model with better accuracy than tiny. Good baseline for CPU use.",
       "languages": ["multi"],
@@ -28,6 +30,7 @@
     },
     {
       "id": "small",
+      "provider_id": "whisper",
       "name": "Whisper Small",
       "description": "Balanced canonical Whisper model for everyday transcription on modest hardware.",
       "languages": ["multi"],
@@ -40,6 +43,7 @@
     },
     {
       "id": "medium",
+      "provider_id": "whisper",
       "name": "Whisper Medium",
       "description": "Higher-accuracy canonical Whisper model for users who can trade speed for quality.",
       "languages": ["multi"],
@@ -52,6 +56,7 @@
     },
     {
       "id": "large-v3",
+      "provider_id": "whisper",
       "name": "Whisper Large v3",
       "description": "Highest-accuracy canonical Whisper model. Best quality, highest resource use.",
       "languages": ["multi"],
@@ -64,6 +69,7 @@
     },
     {
       "id": "turbo",
+      "provider_id": "whisper",
       "name": "Whisper Large v3 Turbo",
       "description": "Fast large-v3-derived Whisper model with a strong speed/accuracy tradeoff. Recommended default local model.",
       "languages": ["multi"],
@@ -76,6 +82,7 @@
     },
     {
       "id": "kb-whisper-tiny",
+      "provider_id": "whisper",
       "name": "KB Whisper Tiny",
       "description": "Swedish Whisper tiny model by KBLab, National Library of Sweden. Smallest and fastest Swedish model.",
       "languages": ["sv"],
@@ -88,6 +95,7 @@
     },
     {
       "id": "kb-whisper-base",
+      "provider_id": "whisper",
       "name": "KB Whisper Base",
       "description": "Swedish Whisper base model by KBLab, National Library of Sweden. Fast and lightweight Swedish transcription.",
       "languages": ["sv"],
@@ -100,6 +108,7 @@
     },
     {
       "id": "kb-whisper-small",
+      "provider_id": "whisper",
       "name": "KB Whisper Small",
       "description": "Swedish Whisper small model by KBLab, National Library of Sweden. Great balance of speed and accuracy for Swedish.",
       "languages": ["sv"],
@@ -112,6 +121,7 @@
     },
     {
       "id": "kb-whisper-medium",
+      "provider_id": "whisper",
       "name": "KB Whisper Medium",
       "description": "Swedish Whisper medium model by KBLab, National Library of Sweden. Strong accuracy for Swedish transcription.",
       "languages": ["sv"],
@@ -124,6 +134,7 @@
     },
     {
       "id": "kb-whisper-large",
+      "provider_id": "whisper",
       "name": "KB Whisper Large",
       "description": "Swedish Whisper large model by KBLab, National Library of Sweden. Optimized for Swedish transcription.",
       "languages": ["sv"],
@@ -136,6 +147,7 @@
     },
     {
       "id": "nb-whisper-tiny",
+      "provider_id": "whisper",
       "name": "NB Whisper Tiny",
       "description": "Norwegian Whisper tiny model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
       "languages": ["no", "nb", "nn", "en"],
@@ -148,6 +160,7 @@
     },
     {
       "id": "nb-whisper-base",
+      "provider_id": "whisper",
       "name": "NB Whisper Base",
       "description": "Norwegian Whisper base model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
       "languages": ["no", "nb", "nn", "en"],
@@ -160,6 +173,7 @@
     },
     {
       "id": "nb-whisper-small",
+      "provider_id": "whisper",
       "name": "NB Whisper Small",
       "description": "Norwegian Whisper small model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
       "languages": ["no", "nb", "nn", "en"],
@@ -172,6 +186,7 @@
     },
     {
       "id": "nb-whisper-medium",
+      "provider_id": "whisper",
       "name": "NB Whisper Medium",
       "description": "Norwegian Whisper medium model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
       "languages": ["no", "nb", "nn", "en"],
@@ -184,6 +199,7 @@
     },
     {
       "id": "nb-whisper-large",
+      "provider_id": "whisper",
       "name": "NB Whisper Large",
       "description": "Norwegian Whisper large model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
       "languages": ["no", "nb", "nn", "en"],

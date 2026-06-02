@@ -7,6 +7,7 @@ Default Whisper model registry for [OSTT](https://ostt.app). Models in this repo
 | Field                | Description                                       |
 |----------------------|---------------------------------------------------|
 | `id`                 | Unique model identifier                           |
+| `provider_id`        | Local transcription engine/provider (`whisper`)   |
 | `name`               | Human-readable model name                         |
 | `description`        | Short description of the model                    |
 | `languages`          | Supported language codes (e.g. `["multi"]`, `["sv"]`) |
