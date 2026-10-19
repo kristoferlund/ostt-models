@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "updated": "2026-10-19",
+  "models": [
+    {
+      "id": "tiny",
+      "provider_id": "whisper",
+      "name": "Whisper Tiny",
+      "description": "Smallest and fastest canonical Whisper model. Best for low-power machines and quick tests.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 75,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "base",
+      "provider_id": "whisper",
+      "name": "Whisper Base",
+      "description": "Fast canonical Whisper model with better accuracy than tiny. Good baseline for CPU use.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 142,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "small",
+      "provider_id": "whisper",
+      "name": "Whisper Small",
+      "description": "Balanced canonical Whisper model for everyday transcription on modest hardware.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 466,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "medium",
+      "provider_id": "whisper",
+      "name": "Whisper Medium",
+      "description": "Higher-accuracy canonical Whisper model for users who can trade speed for quality.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin",
+      "recommended_hardware": "16GB+ RAM recommended. GPU acceleration recommended for frequent use.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "large-v3",
+      "provider_id": "whisper",
+      "name": "Whisper Large v3",
+      "description": "Highest-accuracy canonical Whisper model. Best quality, highest resource use.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "turbo",
+      "provider_id": "whisper",
+      "name": "Whisper Large v3 Turbo",
+      "description": "Fast large-v3-derived Whisper model with a strong speed/accuracy tradeoff. Recommended default local model.",
+      "languages": [
+        "multi"
+      ],
+      "size_mb": 1600,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin",
+      "recommended_hardware": "16GB+ RAM recommended. Good default for local transcription; GPU acceleration improves latency.",
+      "sha256": null,
+      "category": "canonical",
+      "group_id": "ggerganov"
+    },
+    {
+      "id": "kb-whisper-tiny",
+      "provider_id": "whisper",
+      "name": "KB Whisper Tiny",
+      "description": "Swedish Whisper tiny model by KBLab, National Library of Sweden. Smallest and fastest Swedish model.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 75,
+      "url": "https://huggingface.co/KBLab/kb-whisper-tiny/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-base",
+      "provider_id": "whisper",
+      "name": "KB Whisper Base",
+      "description": "Swedish Whisper base model by KBLab, National Library of Sweden. Fast and lightweight Swedish transcription.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 142,
+      "url": "https://huggingface.co/KBLab/kb-whisper-base/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-small",
+      "provider_id": "whisper",
+      "name": "KB Whisper Small",
+      "description": "Swedish Whisper small model by KBLab, National Library of Sweden. Great balance of speed and accuracy for Swedish.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 466,
+      "url": "https://huggingface.co/KBLab/kb-whisper-small/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-medium",
+      "provider_id": "whisper",
+      "name": "KB Whisper Medium",
+      "description": "Swedish Whisper medium model by KBLab, National Library of Sweden. Strong accuracy for Swedish transcription.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/KBLab/kb-whisper-medium/resolve/main/ggml-model.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "kb-whisper-large",
+      "provider_id": "whisper",
+      "name": "KB Whisper Large",
+      "description": "Swedish Whisper large model by KBLab, National Library of Sweden. Optimized for Swedish transcription.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/KBLab/kb-whisper-large/resolve/main/ggml-model.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "kblab"
+    },
+    {
+      "id": "nb-whisper-tiny",
+      "provider_id": "whisper",
+      "name": "NB Whisper Tiny",
+      "description": "Norwegian Whisper tiny model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": [
+        "no",
+        "nb",
+        "nn",
+        "en"
+      ],
+      "size_mb": 75,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-tiny/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-base",
+      "provider_id": "whisper",
+      "name": "NB Whisper Base",
+      "description": "Norwegian Whisper base model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": [
+        "no",
+        "nb",
+        "nn",
+        "en"
+      ],
+      "size_mb": 142,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-base/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Lowest memory and CPU requirements.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-small",
+      "provider_id": "whisper",
+      "name": "NB Whisper Small",
+      "description": "Norwegian Whisper small model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": [
+        "no",
+        "nb",
+        "nn",
+        "en"
+      ],
+      "size_mb": 466,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-small/resolve/main/ggml-model.bin",
+      "recommended_hardware": "Any supported machine. Suitable for CPU transcription.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-medium",
+      "provider_id": "whisper",
+      "name": "NB Whisper Medium",
+      "description": "Norwegian Whisper medium model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": [
+        "no",
+        "nb",
+        "nn",
+        "en"
+      ],
+      "size_mb": 1500,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-medium/resolve/main/ggml-model.bin",
+      "recommended_hardware": "8GB+ RAM recommended. Usable on CPU; faster with GPU acceleration.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "nb-whisper-large",
+      "provider_id": "whisper",
+      "name": "NB Whisper Large",
+      "description": "Norwegian Whisper large model by the National Library of Norway AI Lab. Supports Bokmal, Nynorsk, Norwegian, and English.",
+      "languages": [
+        "no",
+        "nb",
+        "nn",
+        "en"
+      ],
+      "size_mb": 3100,
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-large/resolve/main/ggml-model.bin",
+      "recommended_hardware": "16GB+ RAM minimum; 32GB+ RAM or GPU acceleration recommended.",
+      "sha256": null,
+      "category": "regional",
+      "group_id": "nbailab"
+    },
+    {
+      "id": "parakeet-ultra",
+      "provider_id": "parakeet",
+      "name": "Parakeet Ultra",
+      "description": "Moondream's post-trained Parakeet TDT 0.6B v3. The most accurate multilingual Parakeet: 25 European languages with automatic language detection, punctuation and capitalization.",
+      "languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "it",
+        "lt",
+        "lv",
+        "mt",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "uk"
+      ],
+      "size_mb": 707,
+      "url": "https://huggingface.co/handy-computer/parakeet-ultra-gguf/resolve/a1539be1b849ea7463b88343e5277b373d0c4ea9/parakeet-ultra-Q8_0.gguf",
+      "recommended_hardware": "Any supported machine. Fast on CPU; GPU acceleration optional.",
+      "sha256": "007a59761e9258779f189df396b50d12b83bb5b79e66df4b955c230d2f2a0a59",
+      "category": "community",
+      "group_id": "parakeet"
+    },
+    {
+      "id": "parakeet-tdt-0.6b-v3",
+      "provider_id": "parakeet",
+      "name": "Parakeet TDT 0.6B v3",
+      "description": "NVIDIA's multilingual Parakeet TDT 0.6B v3: 25 European languages with automatic language detection, punctuation and capitalization.",
+      "languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "it",
+        "lt",
+        "lv",
+        "mt",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "uk"
+      ],
+      "size_mb": 706,
+      "url": "https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v3-gguf/resolve/d8d8c32cb2017c57e5307767343e97870f8a7f53/parakeet-tdt-0.6b-v3-Q8_0.gguf",
+      "recommended_hardware": "Any supported machine. Fast on CPU; GPU acceleration optional.",
+      "sha256": "5859f77944efcd8eafa23a6350731960b2b55b2203df51f319665c807d802cc7",
+      "category": "canonical",
+      "group_id": "parakeet"
+    },
+    {
+      "id": "parakeet-tdt-0.6b-v2",
+      "provider_id": "parakeet",
+      "name": "Parakeet TDT 0.6B v2 (English)",
+      "description": "NVIDIA's English Parakeet TDT 0.6B v2. High-accuracy English transcription with punctuation and capitalization.",
+      "languages": [
+        "en"
+      ],
+      "size_mb": 696,
+      "url": "https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v2-gguf/resolve/58239cf6d0ecb0af921e7936c1e5e0a8dba91dbb/parakeet-tdt-0.6b-v2-Q8_0.gguf",
+      "recommended_hardware": "Any supported machine. Fast on CPU; GPU acceleration optional.",
+      "sha256": "f0d0e99cebb6d3b83f1f7069b82b5d3c2e39a54545b0da039cb4bafd9c4e5caa",
+      "category": "canonical",
+      "group_id": "parakeet"
+    },
+    {
+      "id": "parakeet-tdt_ctc-110m",
+      "provider_id": "parakeet",
+      "name": "Parakeet TDT-CTC 110M (English)",
+      "description": "NVIDIA's small English Parakeet. Very fast with low memory use, at somewhat lower accuracy than the 0.6B models.",
+      "languages": [
+        "en"
+      ],
+      "size_mb": 130,
+      "url": "https://huggingface.co/handy-computer/parakeet-tdt_ctc-110m-gguf/resolve/1c3f0d5378fdd358905cc410a93ed9e64f52d170/parakeet-tdt_ctc-110m-Q8_0.gguf",
+      "recommended_hardware": "Any supported machine, including low-power laptops.",
+      "sha256": "7dd44c74a331d788a4e5f8b16913b3feb29ced22cf5613aad0e0f6cd30516296",
+      "category": "canonical",
+      "group_id": "parakeet"
+    }
+  ]
+}
