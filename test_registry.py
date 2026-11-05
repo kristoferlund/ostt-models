@@ -45,6 +45,19 @@ class RegistryTests(unittest.TestCase):
             if model["id"].endswith(".en") or model["id"] == "distil-large-v3.5":
                 self.assertEqual(model["languages"], ["en"], model["id"])
 
+    def test_pianissimo_uses_parakeet_and_language_specific_recommended_gguf(self):
+        models = {model["id"]: model for model in self.current["models"]}
+        for language in ("da", "sv"):
+            model_id = f"pianissimo-{language}"
+            with self.subTest(model=model_id):
+                model = models[model_id]
+                self.assertEqual(model["provider_id"], "parakeet")
+                self.assertEqual(model["languages"], [language])
+                repo, _, filename = artifact_parts(model)
+                self.assertEqual(repo, f"KlangAI/{model_id}-gguf")
+                self.assertEqual(filename, f"{model_id}-Q8_0.gguf")
+                self.assertIn(f"language={language}", model["description"])
+
 
 if __name__ == "__main__":
     unittest.main()

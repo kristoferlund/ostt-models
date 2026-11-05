@@ -25,6 +25,20 @@ Default local model registry for [OSTT](https://ostt.app). Models in this reposi
 
 Models are grouped by publisher and model family, with compact alternatives after the full-precision models.
 
+## Klang Pianissimo (2026-11-05)
+
+Added Klang AI's [Danish](https://huggingface.co/KlangAI/pianissimo-da-gguf) and [Swedish](https://huggingface.co/KlangAI/pianissimo-sv-gguf) Pianissimo models as `parakeet/pianissimo-da` and `parakeet/pianissimo-sv`. Both use the publisher-recommended Q8_0 GGUF (706 MiB each), with pinned revisions and SHA-256 values from Hugging Face LFS metadata. They are Parakeet models, not Whisper models, so they appear only in `models-v2.json`. The models are published by Klang AI under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Download them from `ostt model`. Klang's instructions require an explicit language: pass `--param language=da` or `--param language=sv`, or save these model-specific settings in `ostt.toml`:
+
+```toml
+[parakeet.pianissimo-da.params]
+language = "da"
+
+[parakeet.pianissimo-sv.params]
+language = "sv"
+```
+
 ## Catalog refresh (2026-10-20)
 
 - Added English-only Whisper Tiny/Base/Small/Medium and [Distil-Whisper Large v3.5](https://huggingface.co/distil-whisper/distil-large-v3.5-ggml). These models do not support multilingual transcription.
