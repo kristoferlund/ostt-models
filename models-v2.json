@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-20",
+  "updated": "2026-11-05",
   "models": [
     {
       "id": "tiny",
@@ -439,6 +439,36 @@
       "sha256": "feb5951ae694a62cfeb81fb501f6cfa8cc50d96bcddb1e4e8215f7006bac23a2",
       "category": "regional",
       "group_id": "nbailab"
+    },
+    {
+      "id": "pianissimo-da",
+      "provider_id": "parakeet",
+      "name": "Klang Pianissimo (Danish) Q8_0",
+      "description": "Klang AI's Danish fine-tune of Parakeet TDT 0.6B v3, in the publisher-recommended Q8_0 GGUF format. Supports punctuation and capitalization. Set language=da.",
+      "languages": [
+        "da"
+      ],
+      "size_mb": 706,
+      "url": "https://huggingface.co/KlangAI/pianissimo-da-gguf/resolve/8527d8f1b0ecbcc126692828801fdd98fb7864bd/pianissimo-da-Q8_0.gguf",
+      "recommended_hardware": "CPU or GPU on a supported machine. GPU acceleration optional.",
+      "sha256": "37ba52ff29ce3d03e202df15fc80cf41653918eceb97a28694bf7675918b0cfb",
+      "category": "regional",
+      "group_id": "parakeet"
+    },
+    {
+      "id": "pianissimo-sv",
+      "provider_id": "parakeet",
+      "name": "Klang Pianissimo (Swedish) Q8_0",
+      "description": "Klang AI's Swedish fine-tune of Parakeet TDT 0.6B v3, in the publisher-recommended Q8_0 GGUF format. Supports punctuation and capitalization. Set language=sv.",
+      "languages": [
+        "sv"
+      ],
+      "size_mb": 706,
+      "url": "https://huggingface.co/KlangAI/pianissimo-sv-gguf/resolve/3db1f0f9e0e8a26cf367416f5238420728332874/pianissimo-sv-Q8_0.gguf",
+      "recommended_hardware": "CPU or GPU on a supported machine. GPU acceleration optional.",
+      "sha256": "47bf6b32ee2ae7aa284815e08043b69cd3fc332ab7b532a7e7e854cae135da91",
+      "category": "regional",
+      "group_id": "parakeet"
     },
     {
       "id": "parakeet-ultra",
