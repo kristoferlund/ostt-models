@@ -29,6 +29,10 @@ Models are grouped by publisher and model family, with compact alternatives afte
 
 Added Klang AI's [Danish](https://huggingface.co/KlangAI/pianissimo-da-gguf) and [Swedish](https://huggingface.co/KlangAI/pianissimo-sv-gguf) Pianissimo models as `parakeet/pianissimo-da` and `parakeet/pianissimo-sv`. Both use the publisher-recommended Q8_0 GGUF (706 MiB each), with pinned revisions and SHA-256 values from Hugging Face LFS metadata. They are Parakeet models, not Whisper models, so they appear only in `models-v2.json`. The models are published by Klang AI under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
+Both are approximately 600M-parameter Parakeet v3 fine-tunes with punctuation and capitalization. Klang reports training on approximately 70,000 hours of Danish speech and 50,000 hours of Swedish speech. Read the official [Danish model page](https://klang.ai/pianissimo-da/) and [Swedish model page](https://klang.ai/pianissimo-sv/), or the original Hugging Face model cards for [Danish](https://huggingface.co/KlangAI/pianissimo-da) and [Swedish](https://huggingface.co/KlangAI/pianissimo-sv). The [OSTT Pianissimo guide](https://ostt.ai/guide/pianissimo) covers setup, attributed benchmarks, precision variants, and OSTT-specific limitations.
+
+**CLI compatibility:** Parakeet language-param support is currently unreleased. These models need a build in which `ostt model params parakeet/pianissimo-sv` lists `language`; older builds reject the flag and ignore saved language settings. The registry entries alone do not add that CLI support.
+
 Download them from `ostt model`. Klang's instructions require an explicit language: pass `--param language=da` or `--param language=sv`, or save these model-specific settings in `ostt.toml`:
 
 ```toml
