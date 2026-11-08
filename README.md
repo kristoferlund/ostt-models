@@ -31,7 +31,7 @@ Added Klang AI's [Danish](https://huggingface.co/KlangAI/pianissimo-da-gguf) and
 
 Both are approximately 600M-parameter Parakeet v3 fine-tunes with punctuation and capitalization. Klang reports training on approximately 70,000 hours of Danish speech and 50,000 hours of Swedish speech. Read the official [Danish model page](https://klang.ai/pianissimo-da/) and [Swedish model page](https://klang.ai/pianissimo-sv/), or the original Hugging Face model cards for [Danish](https://huggingface.co/KlangAI/pianissimo-da) and [Swedish](https://huggingface.co/KlangAI/pianissimo-sv). The [OSTT Pianissimo guide](https://ostt.ai/guide/pianissimo) covers setup, attributed benchmarks, precision variants, and OSTT-specific limitations.
 
-**CLI compatibility:** Parakeet language-param support is currently unreleased. These models need a build in which `ostt model params parakeet/pianissimo-sv` lists `language`; older builds reject the flag and ignore saved language settings. The registry entries alone do not add that CLI support.
+**CLI compatibility:** Parakeet language settings require OSTT 0.0.35 or newer. Check that `ostt model params parakeet/pianissimo-sv` lists `language`; older builds reject the flag and ignore saved language settings. The registry entries alone do not add that CLI support.
 
 Download them from `ostt model`. Klang's instructions require an explicit language: pass `--param language=da` or `--param language=sv`, or save these model-specific settings in `ostt.toml`:
 
